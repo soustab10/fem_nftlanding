@@ -1,0 +1,190 @@
+.container {
+    position: absolute;
+    margin: auto;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // top: 50%;
+    // transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 75vw;
+    
+    
+    background-color: $carddarkblue;
+    padding: 1.5625rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+    overflow-y: hidden;
+    align-content: center;
+    width: 20rem;
+
+    
+    
+
+    
+
+    
+    
+    
+    .card {
+        
+        
+        
+        
+
+        &__image{
+            &:hover
+            {
+            
+                cursor: pointer;
+                #img_eye {
+                visibility: visible;
+                transition: 300ms ease-in-out;
+                }
+
+                #cyanoverlay {
+                    visibility: visible;
+                
+                opacity: 0.3;
+                    
+                }
+            }
+            
+        #img1 {
+            position: relative;
+            z-index: 1;
+        height: 12.5rem;
+        border-radius: 6px;
+        
+        height: 100%;
+        width: 100%;       
+        margin-bottom: 1.9375rem;        
+        }
+        #cyanoverlay{
+            position: absolute;
+            z-index: 2;
+        height: 12.5rem;
+        border-radius: 6px;
+        height: 50%;      
+        margin-bottom: 1.9375rem; 
+        visibility: hidden;
+                
+        
+        }
+
+        #img_eye {
+            position: absolute;
+            z-index: 3;
+            top: 157.5px;
+            left: 157.5px;
+            visibility: hidden; 
+            
+            
+            
+            }
+
+        
+
+
+            
+
+        
+        }
+
+        &__title {
+            font-size: 1.65rem;
+            color: $white;
+            margin-bottom: 1.625rem;
+            font-weight: 600;
+
+            &:hover {
+                color: $brightcyan;
+                transition: color 200ms ease-in-out;
+                cursor: pointer;
+            }
+
+
+        }
+
+        &__subtitle {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-weight: 300;
+            color: $softblue ;
+            margin-bottom: 1.375rem;
+
+        }
+
+        &__value {
+            display: flex;
+            flex-direction: row;
+            font-size: 1rem;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.375rem;
+            
+
+        }
+
+        &__eth {
+            color: $brightcyan;
+            img{
+                transform: translateY(2.5px);
+            }
+
+        }
+
+        &__days {
+            color: $softblue;
+            img{
+                transform: translateY(2.5px);
+            }
+
+        }
+
+        
+
+        &__creator {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            padding-top: 1rem; //1.1875
+            border-top: 2px solid $white;
+            gap: 0.60rem;
+            
+            .bluetext {
+                color: $softblue;
+                transform: translateX(0.4rem);
+            }
+
+            .artist {
+                &:hover {
+                    color: $brightcyan;
+                transition: color 200ms ease-in-out;
+                cursor: pointer;
+
+                }
+            }
+            img {
+                border: 3px solid $white;
+                border-radius: 50%;
+                width: 2.1875rem;
+                height: 2.1875rem;
+                
+            }
+        }
+    }
+}
+body{
+    background-color: $mainbackblue;
+    font-family: 'Outfit', sans-serif;
+    padding: 0 1rem;
+    min-height: 100vh;
+    overflow: hidden;
+    
+    
+    
+    
+}
